@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style type="text/css">
+	
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color:  #ff944d;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ff944d;
+  color: black;
+}
+
+.topnav a.active {
+  background-color:   #ff944d;
+  color: white;
+}
+.imageofcat{
+	display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+h1{
+	 font-style: italic;
+	 text-align: center;
+	 color: #ff8533
+
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ff8533
+;
+}
+.adoptme {
+  margin-left:600px;
+  background-color: #ff6600;
+  border: none;
+  font-size: 28px;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.adoptme:after {
+  content: "";
+  background: #f1f1f1;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.adoptme:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+</style>
+<div class="topnav">
+  <a class="active" href="shelterwebsite.html">Home</a>
+  <a href="pet.html">pets</a>
+  <a href="adopt.html">adopt</a>
+  
+</div>
+<br>
+<br>
+<h1> Hi my name is Lucky!</h1>
+<br>
+<div class="imageofcat">
+<img src="https://images.unsplash.com/photo-1542296935124-75ae8a4e6329?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80" alt="cat" width="500" height="500" align="center">
+</div>
+<br>
+<br>
+
+<table>
+  
+  <tr>
+    <td>My name is lucky</td>
+    <td>Female</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>100$ </td>
+    <td>2 years </td>
+    <td>i like same small animals like me </td>
+  </tr>
+
+ 
+  
+</table>
+<br>
+<a id="go"><button class="adoptme" onclick="goadopt()">Adopt me !</button></a>
+ 
+ <script type="text/javascript">
+ 	function goadopt(){
+ 		document.getElementById('go').href="adopt.html"
+
+ 	}
+ </script>
+</body>
+</html>
